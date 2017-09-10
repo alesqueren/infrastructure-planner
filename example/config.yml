@@ -1,5 +1,5 @@
 default:
-  image: Ansible
+  image: Debian 8
   flavor: vps-ssd-1
   network: Ext-Net
 

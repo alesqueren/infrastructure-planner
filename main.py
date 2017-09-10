@@ -50,11 +50,11 @@ def create(config_file_path):
     for k, v in config["servers"].items():
         srv = make_srv(default_srv, v)
         srv["name"] = k
-        servers_by_name.append(srv)
+        servers_types.append(srv)
 
     # make a list of server instances
     servers = []
-    for srv in servers_by_name:
+    for srv in servers_types:
         instances_nb = srv["instances-nb"]
         srv.pop("instances-nb", None)
         for i in range(0, instances_nb):

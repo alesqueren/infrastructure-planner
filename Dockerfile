@@ -7,4 +7,4 @@ RUN pip install -r requirements.txt
 
 ADD . .
 
-CMD ./main.py
+ENTRYPOINT ["/app/main.py"]
