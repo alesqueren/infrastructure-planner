@@ -1,0 +1,15 @@
+default:
+  image: Ansible
+  flavor: vps-ssd-1
+  network: Ext-Net
+
+servers:
+  manager:
+    flavor: vps-ssd-2
+    meta:
+      docker: manager
+
+  worker:
+    instances-nb: 2
+    meta:
+      docker: worker
